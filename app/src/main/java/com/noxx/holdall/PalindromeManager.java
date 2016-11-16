@@ -4,13 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class PalindromeManager extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_palindrome);
-    }
+public class PalindromeManager {
 
     public String inverse(String word) {
         int length = word.length();
@@ -34,6 +28,7 @@ public class PalindromeManager extends AppCompatActivity {
                 continue;
             } else {
                 return false;
+
             }
         }
         return true;

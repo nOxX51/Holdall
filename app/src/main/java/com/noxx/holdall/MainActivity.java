@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,PalindromeManager.class);
+                Intent intent = new Intent(MainActivity.this,PalindromeActivity.class);
                 startActivity(intent);
             }
         });
