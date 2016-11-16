@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".PhotoActivity" />
-        <activity android:name=".Palindrome"></activity>
+        <activity android:name=".PalindromeManager"></activity>
     </application>
 
 </manifest>

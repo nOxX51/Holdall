@@ -4,12 +4,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class Palindrome extends AppCompatActivity {
+public class PalindromeManager extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_palindrome);
+    }
+
+    public String inverse(String word) {
+        int length = word.length();
+        StringBuffer newString = new StringBuffer("");
+
+        for (int indiceChar = 0; indiceChar < length; indiceChar++) {
+            newString.insert(0,word.charAt(indiceChar));
+        }
+        String s = newString.toString();
+
+        return s;
     }
 
     public boolean palindrome(String word) {
@@ -21,12 +33,9 @@ public class Palindrome extends AppCompatActivity {
             if (word.charAt(indexA)==word.charAt(indexD)) {
                 continue;
             } else {
-                Log.e("show result", "Ceci n'est pas un palindrome");
                 return false;
-
             }
         }
-        Log.e("show result", "Ceci est bien un palindrome");
         return true;
     }
 }
