@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="Test 4"
+            android:text="List"
             android:background="@android:color/holo_purple"/>
 
         <Button
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="Test 5"
+            android:text="ListUpgrade"
             android:background="@android:color/holo_red_dark"/>
     </LinearLayout>
 
